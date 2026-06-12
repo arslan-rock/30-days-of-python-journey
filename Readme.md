@@ -184,13 +184,12 @@ By completing the first six days, I have gained experience with:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repository-name.git
-```
+git clone https://github.com/arslan-rock/30-days-of-python-journey.git```
 
 ### 2. Navigate to the project directory
 
 ```bash
-cd your-repository-name
+cd 30-days-of-python-journey
 ```
 
 ### 3. Run any Python file
