@@ -1,7 +1,7 @@
 # 🐍 30 Days of Python – Learning Journey
 
-![Python](https://img.shields.io/badge/Python-Learning-blue?style=for-the-badge\&logo=python)
-![Progress](https://img.shields.io/badge/Progress-6%2F30-success?style=for-the-badge)
+![Python](https://shields.io)
+![Progress](https://shields.io)
 ![Status](https://img.shields.io/badge/Status-In%20Progress-orange?style=for-the-badge)
 ![Beginner](https://img.shields.io/badge/Level-Beginner-brightgreen?style=for-the-badge)
 
@@ -11,7 +11,7 @@ This repository documents my journey through the **30 Days of Python** challenge
 
 As a beginner Python learner, I am using this repository to track my progress, practice coding consistently, and build a strong foundation in Python programming. It contains my notes, exercises, practice programs, and solutions completed throughout the challenge.
 
-Currently, I have successfully completed **Days 1–6** and will continue updating this repository as I progress through the remaining days.
+Currently, I have successfully completed **Days 1–8** and will continue updating this repository as I progress through the remaining days.
 
 ---
 
@@ -46,7 +46,7 @@ Through this challenge, I aim to:
 
 ---
 
-## 📚 Topics Covered (Days 1–6)
+## 📚 Topics Covered (Days 1–8)
 
 ### ✅ Day 1: Introduction
 
@@ -90,6 +90,20 @@ Through this challenge, I aim to:
 * Tuple operations
 * Differences between lists and tuples
 
+### ✅ Day 7: Sets
+
+* Creating sets
+* Adding and clearing items
+* Intersection, union, and difference of sets
+* Symmetric difference and subsets
+
+### ✅ Day 8: Dictionaries
+
+* Creating dictionaries
+* Accessing, modifying, and adding items
+* Converting dictionaries to lists and tuples
+* Popping items and clearing dictionaries
+
 ---
 
 ## 📂 Repository Structure
@@ -98,13 +112,11 @@ Through this challenge, I aim to:
 30-Days-of-Python/
 │
 ├── Day_01/
-│   ├── Day_1.py
+│   └── Day_1.py
 │   
-│
 ├── Day_02/
-│   ├── variable.py
+│   └── variable.py
 │   
-│
 ├── Day_03/
 │   ├── example.py
 │   └── exercise.py
@@ -121,6 +133,14 @@ Through this challenge, I aim to:
 │   ├── exercise.py
 │   └── tuples.py
 │
+├── Day_07/
+│   └── exercise.py
+    └── sets.py
+│
+├── Day_08/
+│   └── exercise.py
+    └── dictionary.py
+│
 └── README.md
 ```
 
@@ -136,8 +156,8 @@ Through this challenge, I aim to:
 * [x] Day 04 – Strings
 * [x] Day 05 – Lists
 * [x] Day 06 – Tuples
-* [ ] Day 07
-* [ ] Day 08
+* [x] Day 07 – Sets
+* [x] Day 08 – Dictionaries
 * [ ] Day 09
 * [ ] Day 10
 * [ ] Day 11
@@ -165,15 +185,16 @@ Through this challenge, I aim to:
 
 ## 🛠️ Skills Learned So Far
 
-By completing the first six days, I have gained experience with:
+By completing the first eight days, I have gained experience with:
 
 * Python syntax and structure
 * Variables and data types
 * User input handling
 * Arithmetic and logical operations
 * String manipulation
-* List operations
-* Tuple operations
+* List and tuple operations
+* Set mathematical relations (Unions, Intersections)
+* Dictionary data structures and key-value mapping
 * Problem-solving through coding exercises
 * Writing and organizing Python programs
 
@@ -184,7 +205,8 @@ By completing the first six days, I have gained experience with:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/arslan-rock/30-days-of-python-journey.git```
+git clone https://github.com/arslan-rock/30-days-of-python-journey.git
+```
 
 ### 2. Navigate to the project directory
 
@@ -223,8 +245,6 @@ As I continue this challenge, I plan to:
 
 ## 🙌 Acknowledgments
 
-## 🙌 Acknowledgments
-
 A special thanks to **Asabeneh Yetayeh** for creating the **30 Days of Python** challenge and providing an excellent learning resource for beginners and aspiring developers.
 
 - GitHub: https://github.com/Asabeneh
@@ -233,6 +253,7 @@ A special thanks to **Asabeneh Yetayeh** for creating the **30 Days of Python** 
 This repository documents my personal progress, practice exercises, notes, and solutions while following the challenge. All credit for the challenge content and learning roadmap goes to **Asabeneh Yetayeh**.
 
 Thank you for making Python learning accessible to the global developer community. 🚀
+
 ---
 
 ## ⭐ Connect With My Learning Journey
