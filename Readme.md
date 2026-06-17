@@ -11,8 +11,7 @@ This repository documents my journey through the **30 Days of Python** challenge
 
 As a beginner Python learner, I am using this repository to track my progress, practice coding consistently, and build a strong foundation in Python programming. It contains my notes, exercises, practice programs, and solutions completed throughout the challenge.
 
-Currently, I have successfully completed **Days 1–8** and will continue updating this repository as I progress through the remaining days.
-
+Currently, I have successfully completed **Days 1–9** and will continue updating this repository as I progress through the remaining days.
 ---
 
 ## 🚀 About the Challenge
@@ -46,7 +45,7 @@ Through this challenge, I aim to:
 
 ---
 
-## 📚 Topics Covered (Days 1–8)
+## 📚 Topics Covered (Days 1–9)
 
 ### ✅ Day 1: Introduction
 
@@ -104,6 +103,17 @@ Through this challenge, I aim to:
 * Converting dictionaries to lists and tuples
 * Popping items and clearing dictionaries
 
+### ✅ Day 9: Conditionals
+
+* if statements
+* if-else statements
+* if-elif-else statements
+* Nested conditions
+* Logical operators with conditions
+* User input validation
+* Comparing values and decision making
+* Working with dictionaries and conditional checks
+* Problem-solving using conditional logic
 ---
 
 ## 📂 Repository Structure
@@ -135,11 +145,15 @@ Through this challenge, I aim to:
 │
 ├── Day_07/
 │   └── exercise.py
-    └── sets.py
+│    └── sets.py
 │
 ├── Day_08/
+│    └── exercise.py
+│    └── dictionary.py
+│
+├── Day_09/
 │   └── exercise.py
-    └── dictionary.py
+│    └── if_else_elif.py
 │
 └── README.md
 ```
@@ -158,7 +172,7 @@ Through this challenge, I aim to:
 * [x] Day 06 – Tuples
 * [x] Day 07 – Sets
 * [x] Day 08 – Dictionaries
-* [ ] Day 09
+* [x] Day 09 – Conditionals
 * [ ] Day 10
 * [ ] Day 11
 * [ ] Day 12
@@ -195,6 +209,10 @@ By completing the first eight days, I have gained experience with:
 * List and tuple operations
 * Set mathematical relations (Unions, Intersections)
 * Dictionary data structures and key-value mapping
+* Conditional statements (if, elif, else)
+* Nested conditional logic
+* Decision making in Python programs
+* Dictionary and list membership testing
 * Problem-solving through coding exercises
 * Writing and organizing Python programs
 
@@ -229,6 +247,22 @@ python3 filename.py
 Make sure Python is installed on your system.
 
 ---
+---
+
+## 🎉 Latest Milestone
+
+✅ Successfully completed **Day 9: Conditionals** from the **30 Days of Python** challenge by **Asabeneh Yetayeh**.
+
+Key concepts practiced:
+
+* if, elif, and else statements
+* Nested conditions
+* User input handling
+* Comparison operators
+* Logical decision making
+* Dictionary and list membership checks
+
+This milestone marks continued progress in building a strong foundation in Python programming.
 
 ## 🎯 Future Goals
 
@@ -237,7 +271,7 @@ As I continue this challenge, I plan to:
 * Complete all 30 days successfully
 * Strengthen my understanding of Python programming
 * Build more practical projects
-* Learn functions, modules, and object-oriented programming
+* Continue learning loops, functions, modules, and object-oriented programming
 * Improve coding best practices
 * Create a solid foundation for future software development and data-related projects
 
