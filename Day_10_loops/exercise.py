@@ -84,10 +84,10 @@ for counter in range(0, 101):
 print(f"The sum of all evens is {even_sum}. And the sum of all odds is {odd_sum}.")
 
 # This ques not part of exercise but for practice 
-# reverse_hash = 7
+reverse_hash = 7
 
-# for m in range(0, reverse_hash + 1):
-#     for n in range(0, reverse_hash - i):
-#         print("#", end=" ")
-#     print()
+for m in range(0, reverse_hash + 1):
+    for n in range(0, reverse_hash - i):
+        print("#", end=" ")
+    print()
 
