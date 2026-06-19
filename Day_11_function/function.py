@@ -119,6 +119,86 @@ def check_even(h):
 
 print(check_even(10))    
 
-# Function with default parameters:
+# # Function with default parameters:
+# Sometimes we pass default values to parameters, when we invoke the function. If we do not pass arguments when calling the function, their default values will be used.
+# syntax
+# # Declaring a function
+# def function_name(param = value):
+#     codes
+#     codes
+# # Calling function
+# function_name()
+# function_name(arg)
+def welcome(name = "Arslan", prog_lang = "Python"):
+    sentence_2 = "Hey " + name + " Welcome to " + prog_lang + " programming language."
+    return sentence_2
 
+print(welcome()) # Default
+print(welcome("Anas", "Java")) 
 
+def weight_of_object(mass, gravity = 9.81):
+    weight = mass * gravity
+    return f"Weight of object is {weight} N"
+
+print(weight_of_object(100)) # 9.81 for average gravity on earth surface
+print(f"Weight of object on moon surface: {weight_of_object(100, 1.62)}") # 1.62 gravity on moon surface
+
+# Arbitrary Number of Arguments
+# If we don't know the no. of argumet so we just placed *args before the argument so it can take bunch of arguments
+def uefa(*team):
+    sentence_3 = "".join(team) + " are UEFA teams" 
+    return sentence_3
+
+print(uefa("AS Monaco, ", "Arsenal, ", " Atalanta, ", "Athletic Club"))
+
+# Default and # Arbitrary Number of Arguments
+def ipl(*team, touranment):
+    print(touranment + " teams :")
+    for i in team:
+        print(i)
+    return team
+
+print(ipl("RCB", "CSK", "KKR", "GT", "MI", touranment="IPL"))
+
+# Dictionary unpacking
+# Dictionary unpacking (**) takes key-value pairs from a dictionary and passes them as keyword arguments to a function.
+def greet(name, location):
+    new_sentence = "Hey, there my name is " + name + " and I live in " + location
+    return new_sentence
+
+details = {
+    "name" : "Arslan",
+    "location" : "India"
+}
+
+print(greet(**details))
+
+# but if key not match it raise an error so your key must be match with parameter and value can be anything
+
+# Arbitrary Number of Named Arguments
+# You can also define a function to accept an arbitrary number of named arguments.
+def arbitrary_named_args(**args):
+    print("I received an arbitrary number of arguments, totaling", len(args))
+    print("They are provided as a dictionary in my function:", type(args))
+    print("Let's print them:")
+    for k, v in args.items():
+        print(" * key:", k, "value:", v)
+    
+    return args
+
+employee = {
+    "name" : "Arslan",
+    "Age" : 23,
+    "City" : "India"
+}
+
+print(arbitrary_named_args(**employee))
+
+# Function as a Parameter of Another Function
+def square_num(n):
+    return n * n
+
+def do_something(f, x):
+    return f(x)
+
+print(do_something(square_num, 9))
