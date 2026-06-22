@@ -57,3 +57,96 @@ def check_season(month):
         return "Invalid Month"
 
 print(check_season("June"))
+
+# 6 Write a function called calculate_slope which return the slope of a linear equation
+def calculate_slope(x1, y1, x2, y2):
+    slope = (x2 - x1) / (y2 - y1)
+    return slope
+
+print(calculate_slope(x2= 8, x1= 4, y2= 10, y1= 5))
+
+# 7 Quadratic equation is calculated as follows: ax² + bx + c = 0. Write a function which calculates solution set of a quadratic equation, solve_quadratic_eqn.
+def calculate_quadratic(a, b, c, x):
+    quadratic = (a * x ** 2) + (b * x) + c
+    return quadratic
+
+print(calculate_quadratic(a= 4, x= 2, b= 3, c= 5)) 
+
+# 8 Declare a function named print_list. It takes a list as a parameter and it prints out each element of the list.
+def print_list(nums):
+    for num in nums:
+        return nums
+
+
+print(print_list([10, 20, 30]))   
+
+# 9 reverse list 
+def reverse_list(start_num):
+    total = []
+
+    for num in range(start_num -1, -1, -1):
+        total.append(num)
+    return total
+
+print(reverse_list(11))
+
+# 10 Declare a function named capitalize_list_items. It takes a list as a parameter and it returns a capitalized list of items
+def capitalize_list_items(items):
+    new_total = []
+
+    for item in items:
+        capitalized_item = item.title()
+        new_total.append(capitalized_item)
+    
+    return new_total
+
+print(capitalize_list_items(["arslan", "muneeb", "arsh", "suresh jain"]))
+
+# 11 Declare a function named add_item. It takes a list and an item parameters. It returns a list with the item added at the end.
+characters = ["ahmed", "anuj", "karan", "jatin"]
+
+def add_item(lst, item):
+   lst.append(item)
+   return lst
+
+print(add_item(characters, "sapru"))
+
+# 12 Declare a function named remove_item. It takes a list and an item parameters. It returns a list with the item removed from it.
+def remove_item(new_lst, new_item):
+    new_lst.remove(new_item)
+    return new_lst
+
+marvel_movie = ["Avengers", "Captain America", "Iron Man", "Black Widow"]
+print(remove_item(marvel_movie, "Iron Man"))
+
+# 13 Declare a function named sum_of_numbers. It takes a number parameter and it adds all the numbers in that range.
+def sum_of_numbers(nums):
+    total = 0
+    
+    for num in range(1, nums + 1):
+      total += num
+    return total
+  
+print(sum_of_numbers(9))
+
+#14 Declare a function named sum_of_odds. It takes a number parameter and it adds all the odd numbers in that range.
+def sum_of_odds(odd_nums):
+    total_odds = 0
+
+    for odd_num in range(1, odd_nums + 1):
+        if odd_num % 2 != 0 :
+            total_odds += odd_num
+    return total_odds
+    
+print(sum_of_odds(10))
+
+#15 # Declare a function named sum_of_even. It takes a number parameter and it adds all the even numbers in that range.
+def sum_of_even(even_nums):
+    total_even = 0 
+
+    for even_num in range(1, even_nums + 1):
+        if even_num % 2 == 0 :
+            total_even += even_num
+    return total_even
+
+print(sum_of_even(10))
