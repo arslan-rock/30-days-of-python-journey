@@ -75,8 +75,7 @@ print(calculate_quadratic(a= 4, x= 2, b= 3, c= 5))
 # 8 Declare a function named print_list. It takes a list as a parameter and it prints out each element of the list.
 def print_list(nums):
     for num in nums:
-        return nums
-
+        print(num)
 
 print(print_list([10, 20, 30]))   
 
@@ -150,3 +149,38 @@ def sum_of_even(even_nums):
     return total_even
 
 print(sum_of_even(10))
+
+# 23-Jun-2026
+# # Exercises: Level 2
+#1. Declare a function named evens_and_odds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
+def count_range_evens_odds(max_limit):
+    even = 0
+    odd = 0
+
+    # Starting from 0 instead of 1
+    for num in range(0, max_limit + 1):
+        if num % 2 == 0:  
+            even += 1
+        else:  
+            odd += 1
+
+    print("Even numbers:", even)
+    print("Odd numbers:", odd)
+
+# Call the function with 100 as the single parameter
+count_range_evens_odds(100)
+
+# 2. Call your function factorial, it takes a whole number as a parameter and it return a factorial of the number
+def factorial(number):
+    if number < 0:
+        return "Factorial is not defined for negative numbers"
+    result = 1
+    for i in range(1, number + 1):
+        result *= i
+    return result
+
+# Test cases
+print(factorial(5))  # Output: 120 (5 * 4 * 3 * 2 * 1)
+print(factorial(0))  # Output: 1
+
+# 3. Call your function is_empty, it takes a parameter and it checks if it is empty or not
