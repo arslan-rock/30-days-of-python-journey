@@ -184,3 +184,82 @@ print(factorial(5))  # Output: 120 (5 * 4 * 3 * 2 * 1)
 print(factorial(0))  # Output: 1
 
 # 3. Call your function is_empty, it takes a parameter and it checks if it is empty or not
+def is_empty(value):
+    return not value
+
+print(is_empty(""))
+print(is_empty([]))
+print(is_empty("Hello"))
+
+#4 Write different functions which take lists. They should calculate_mean, calculate_median, calculate_mode, calculate_range, calculate_variance, calculate_std (standard deviation).
+ 
+import math
+
+def calculate_mean(numbers):
+    return sum(numbers) / len(numbers)
+
+
+def calculate_median(numbers):
+    sorted_nums = sorted(numbers)
+    n = len(sorted_nums)
+    mid = n // 2
+
+    if n % 2 == 0:
+        return (sorted_nums[mid - 1] + sorted_nums[mid]) / 2
+    else:
+        return sorted_nums[mid]
+
+
+def calculate_mode(numbers):
+    counts = {}
+
+    for num in numbers:
+        counts[num] = counts.get(num, 0) + 1
+
+    max_count = max(counts.values())
+
+    return [num for num, count in counts.items() if count == max_count]
+
+
+def calculate_range(numbers):
+    return max(numbers) - min(numbers)
+
+
+def calculate_variance(numbers):
+    mean = calculate_mean(numbers)
+
+    squared_diffs = []
+    for num in numbers:
+        squared_diffs.append((num - mean) ** 2)
+
+    return sum(squared_diffs) / len(numbers)
+
+
+def calculate_std(numbers):
+    variance = calculate_variance(numbers)
+    return math.sqrt(variance)
+
+
+# Example
+data = [1, 2, 2, 3, 4, 5]
+
+print("Mean:", calculate_mean(data))
+print("Median:", calculate_median(data))
+print("Mode:", calculate_mode(data))
+print("Range:", calculate_range(data))
+print("Variance:", calculate_variance(data))
+print("Standard Deviation:", calculate_std(data))
+
+#5 Write a function called greet which takes a default argument, name. If no argument is supplied it should print "Hello, Guest!", otherwise it should greet the person by name.
+def greet(name = "Guest"):
+    return f'"Hello, {name}!"'
+
+print(greet())
+print(greet("Anas"))
+
+#6 Create a function called show_args to take an arbitrary number of named arguments and print their names and values.
+def show_args(**kwargs):
+    for name, value in kwargs.items():
+        print(f"{name}: {value}")
+
+print(show_args(name = "Arslan", age = 23, city = "Delhi"))    
