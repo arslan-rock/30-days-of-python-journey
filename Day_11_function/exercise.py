@@ -262,4 +262,57 @@ def show_args(**kwargs):
     for name, value in kwargs.items():
         print(f"{name}: {value}")
 
-print(show_args(name = "Arslan", age = 23, city = "Delhi"))    
+print(show_args(name = "Arslan", age = 23, city = "Delhi"))
+
+# # Exercises: Level 3
+# Write a function called is_prime, which checks if a number is prime.
+def is_prime(num):
+    if num <= 1:
+        return False
+
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+
+    return True
+
+# Example
+print(is_prime(7))   # True
+print(is_prime(10))  # False
+
+# 2 Write a functions which checks if all items are unique in the list.
+def all_unique(lst):
+    return len(lst) == len(set(lst))
+
+# Example
+print(all_unique([1, 2, 3, 4]))      # True
+print(all_unique([1, 2, 2, 3, 4]))   # False
+
+# 3 Write a function which checks if all the items of the list are of the same data type.
+def same_data_type(lst):
+    if not lst:
+        return True
+
+    first_type = type(lst[0])
+
+    for item in lst:
+        if type(item) != first_type:
+            return False
+
+    return True
+
+# Example
+print(same_data_type([1, 2, 3, 4]))      # True
+print(same_data_type([1, "2", 3]))       # False
+
+# 4 Write a function which check if provided variable is a valid python variable
+def is_valid_variable(var_name):
+    return var_name.isidentifier()
+
+# Example
+print(is_valid_variable("my_var"))   # True
+print(is_valid_variable("2name"))    # False
+print(is_valid_variable("class"))    # True (identifier, but keyword)
+
+# # 5 Go to the data folder and access the countries-data.py file.
+# 5a. Create a function called the most_spoken_languages in the world. It should return 10 or 20 most spoken languages in the world in descending order
